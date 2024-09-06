@@ -1,50 +1,50 @@
-# React + TypeScript + Vite
+# 99 - Home-App React/TS Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Home-App is a property finder web app for properties on sale or for rent
 
-Currently, two official plugins are available:
+- Lists properties
+- Lists agencies
+- map/location functionality
+- login functionality
+- wishlist/saved properties
+- mortgage calculator
+- notes on properties
+- agent login
+- agent dashboard
+- admin dashboard
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Description
 
-## Expanding the ESLint configuration
+Frontend app providing full e-commerce functionality including:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- login/logout/signup
+- update user profile
+- create/delete/update/get house/s
+- create/delete/update/get agency/s
+- display on map
+- add/remove to/from saved
 
-- Configure the top-level `parserOptions` property like this:
+## Tech stack
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### frontend
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- react
+- react-router-dom
+- typescript
+- vite
+- styled-components
+- axios
+- react-international-phone
+- google-libphonenumber
+- react-phone-number-input
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Usage
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- copy repo files to local directory
+- npm install
+- configure .env file with VITE_BASEURL
+
+* VITE_BASEURL is URL & port of the backend server (in dev this is http://localhost:5000)
+
+- npm run dev
+- connect with localhost:5173 if running locally in dev
